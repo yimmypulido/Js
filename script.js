@@ -86,19 +86,118 @@
 // }
 
 
-let peso = prompt ('ingrese su peso');
+// let peso = prompt ('ingrese su peso');
+// let sexo = prompt (' ingrese su sexo, M = Masculuno  F= femenino');
 
-let libras = ( peso *2.205);
-
-console.log( 'su peso en libras es ' + libras)
-
-if ( libras < 160){
-    console.log( 'su peso es demasiado bajo para competir')
-}else if( libras >=160 && libras <= 180 ){
- console.log( ' su peso es medio para competir, participe!!')
-} else { libras > 180
-    console.log( 'su peso es mayor puede competir')
-};
+// let libras = ( peso *2.205);
 
 
+// console.log( 'su peso en libras es ' + libras)
+
+
+// if ( sexo === 'M' ){
+
+// if ( libras < 160){
+//     console.log( 'su peso es demasiado bajo para competir en peso bajo')
+// }else if( libras >=160 && libras <= 180 ){
+//  console.log( ' su peso es medio para competir, participe en peso medo!!')
+// } else { libras > 180
+//     console.log( 'su peso es mayor puede competir peso pesado')
+// }
+// }
+
+// else { sexo === 'F'
+
+// if ( libras < 115){
+//     console.log( 'su peso es demasiado bajo para competir, F')
+// }else if( libras >=115 && libras <= 135 ){
+
+
+//  console.log( ' su peso es medio para competir, participe!! ,F')
+// } else { libras > 180
+//     console.log( 'su peso es mayor puede competir  ,F ')
+
+// }
+// }
+
+
+// let bajo = 160;
+// let medio = 180;
+// if ( genero == 'f'){
+//     bajo = 115;
+//     medio = 135;
+// }
+
+// if( libras <= bajo){
+//     console.log(' categoria gallo')
+// }else if (libras <= medio) {
+//     console.log( 'categoria ligero')
+// }else {
+//     console.log( 'categoria pesado')
+// }
+
+// let preparacion = prompt('escoja francesa, moka, v60')
+// let gramos = prompt (' ponga los gramos')
+
+// let francesa = ( gramos *15)
+// let moka = ( gramos *14)
+// let v60 = ( gramos *16)
+
+// if ( preparacion === 'francesa' ){
+//     console.log( 'tienes que echar esta cantidad de gramos' + francesa)
+// }else if ( preparacion === 'moka'){
+//     console.log( 'tienes que echar esta cantidad de gramos' + moka)
+// }else{
+//     preparacion === 'v60'
+//     console.log( 'tienes que echar esta cantidad de gramos' + v60)
+// }
+
+
+
+// let year = prompt(' escribe un año');
+ 
+// if ((year % 400 === 0) || (year % 4 === 0 && year % 100 !== 0)) {
+//     console.log ('Es bisiesto')
+// }else {
+//     console-log ('no es bisiesto')
+// }
+//   % operador para saber si es dibisible entre si 
+
+// let asistencia =  prompt(' cuantas personas asistieron a la cena ');
+// let comio = prompt ('que persona comio mas?')
+// let precio = prompt ('precio total de la cena')
+
+// let cuenta =( precio/asistencia);
+// let cena =( cuenta/asistencia);
+// let cuenta_m = (precio * cena);
+
+
+
+// console.log ( 'cada uno debe pagar ' + cena)
+// console.log ( 'el que comio mas' + comio + 'paga'+ cuenta_m)
+
+
+//for 
+
+// se declara una variable
+//  let i = 1
+//  luego se declara la condicion para que se repita
+
+//  i <= 10  como la variable let i tiene un valor de 1 y la condicion es que si es menor que dies se repite
+
+//  luego se declara el incremento 
+
+//  i++ esto le agrega mas 1 a la variable 
+
+//  quedaria asi 
+
+//  for (let i =1; i <= 10; i++){
+//     console.log(i)
+//  }
+
+let number = Number(prompt('escriba el numero de 1 al 10'))
+for( let i = 1; i <=10 ; i++){
+
+    console.log(i * number)
+}
 
