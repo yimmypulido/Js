@@ -195,9 +195,68 @@
 //     console.log(i)
 //  }
 
-let number = Number(prompt('escriba el numero de 1 al 10'))
-for( let i = 1; i <=10 ; i++){
+// let number = Number(prompt('escriba el numero de 1 al 10'));
+// let number2 = Number (prompt('escriba hasta que numero quiere la multiplicacion'));
 
-    console.log(i * number)
+
+// for( let i = 1; i <= number2 ; i++){
+//     console.log(i * number)
+// }
+
+
+// for (let i = 1; i <=3; i++){
+
+//     let name = prompt('ingrese su nombre')
+
+//     for(let j = 1; j <=3; j++){
+
+//         let notas = []
+//         let nota = prompt('ingrese sus notas')
+        
+//         notas.push= (nota);
+//         console.log( `${name} tu nota es ${nota}`)
+
+//     };
+
+
+//     // console.log( name + ' ' + nota);
+// }
+
+
+//  
+//     let nota = Number(prompt('ingrese su nota final'))
+//     if( nota >= 3 ){
+//         console.log('pasaste')
+//     }else{
+//         console.log('no pasaste')
+//   
+
+// let dolar = Number(prompt ("cuantas veces va acombertir"));
+
+
+
+// for( let i = 0; i <= dolar; i++){
+
+//     let conver = Number(prompt(' escribe lo que vas a convertir' ));
+//     let ejer = conver*3200;
+
+//     console.log (`su conversion es: ${ejer}`);
+    
+
+// }
+
+
+// if( i % 2 === 0){ console.log('esto sirve para saber si algo es divisible o no')
+// }
+
+
+for ( let i = 1; i <=50; i++){
+
+    if( i % 3 === 0){
+        console.log( i + 'Fizz')
+    }else if( i % 5 ===0){
+        console.log( i + 'bozz')
+    }else{
+        console.log( i + 'fizzbozz')
+    }
 }
-
