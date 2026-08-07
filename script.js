@@ -372,13 +372,13 @@ let estudiantes = [
 
 for (let i = 0; i < estudiantes.length; i++) {
 
-    let comparacion = estudiantes[i].notas + estudiantes[i].notas / 2
+    let comparacion = estudiantes[i].nota[0] + estudiantes[i].nota[1] / 2
     
-    if(estudiantes[i].nota >= comparacion ){
-
-        console.log(  estudiantes[i].nombres + '  ' + estudiantes[i].nota + '  ' + `estudiante paso  `)
+    if( comparacion >= 4 ){
+    
+        console.log(  estudiantes[i].nombres + ' tu promedio es ' + comparacion + '  ' + `estudiante paso  `)
     }else{
-        console.log(  estudiantes[i].nombres + '   ' + estudiantes[i].nota  + '  ' + `estudiante no paso  `)
+        console.log(  estudiantes[i].nombres + '  tu promedio es  ' + comparacion + '  ' + `estudiante no paso  `)
     }
 
 }
