@@ -250,13 +250,87 @@
 // }
 
 
-for ( let i = 1; i <=50; i++){
+// for ( let i = 1; i <=50; i++){
 
-    if( i % 3 === 0){
-        console.log( i + 'Fizz')
-    }else if( i % 5 ===0){
-        console.log( i + 'bozz')
-    }else{
-        console.log( i + 'fizzbozz')
+//     if(  i % 3 === 0 && i % 5 ===0){
+//         console.log( i + 'Fizzbozz')
+//     }else if( i % 5 ===0){
+//         console.log( i + 'bozz')
+//     }else if (i % 3 === 0){ 
+//         console.log( i + 'fiz')
+//     }
+// }
+
+
+// nomarray.push (el dato que uno quiera agregar) sirve para agregar elementos a un Array
+// nomarray.pop() se coloca al final para que tome el ultimo elemento agragado en un array
+
+// nomarray.shift(); elimina el primer elemento que contenga un array
+// normarray.unshift('dato el que se quiere agrgar') crea un elemento al principio de un array
+
+// let frutas = [ 'fresa', 'mora', 'kiwi']
+// let fruta = prompt('ingrese una nueva fruta')
+// frutas.push(fruta);
+// console.log(frutas);
+
+
+// let factorial = prompt('escriba el numero para sacar factorial')
+//  let valor = 1
+
+// for( let i = 1; i <= valor ; i++){
+
+//     factorial *= i
+//     console.log(factorial)
+// }
+
+// nomArray.includes ('el dato por confirmar si esta en array o no') includes sirve para mirar si un caracter o algo exista en un arrai
+
+
+// let hashes = ['w1234w5s', '123456789', '9874561230', '112233445566' , 'juanito123', 'pepito123', '123' ,'321' , '789']
+
+// let inseguras = [];
+// let medias = []
+// let segura = [];
+
+// for (let i = 0; i < hashes.length; i++) {
+
+//     medias.push(hashes.includes)
+    
+//     if( hashes[i].length <= 8 ){
+
+//       inseguras.push(hashes[i])
+    
+//      }else if(hashes[i].includes('#')
+//      ){
+//         segura.push(hashes[i])
+//      }
+//      else{
+        
+//         medias.push(hashes[i])
+//     }
+// }
+//     console.log( 'su contraseña es segura ' + segura)
+//     console.log( 'su contraseña es insegura ' + inseguras)
+//     console.log( 'su contraseña es media ' + medias)
+    
+
+let numAzar = Math.floor((Math.random () *10) +1 );
+
+for(let i = 1; i <= 5; i++){
+
+    let num = Number(prompt('ingrese un numero'));
+
+    if( num === numAzar ){
+
+        console.log('ganaste adivino el numero')
+        break;
+
+    }else if ( num > numAzar){
+
+        console.log('ya casi, escriba un numero menor')
+    }
+    {
+         console.log('intenta de nuevo ')
+
     }
 }
