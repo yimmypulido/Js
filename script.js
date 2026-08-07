@@ -314,23 +314,71 @@
 //     console.log( 'su contraseña es media ' + medias)
     
 
-let numAzar = Math.floor((Math.random () *10) +1 );
+// let numAzar = Math.floor((Math.random () *10) +1 );
 
-for(let i = 1; i <= 5; i++){
+// for(let i = 1; i <= 5; i++){
 
-    let num = Number(prompt('ingrese un numero'));
+//     let num = Number(prompt('ingrese un numero'));
 
-    if( num === numAzar ){
+//     if( num === numAzar ){
 
-        console.log('ganaste adivino el numero')
-        break;
+//         console.log('ganaste adivino el numero')
+//         break;
 
-    }else if ( num > numAzar){
+//     }else if ( num > numAzar){
 
-        console.log('ya casi, escriba un numero menor')
-    }
+//         console.log('ya casi, escriba un numero menor')
+//     }else if( num < numAzar){
+       
+//         console.log('ya casi, escriba un numero mayor')
+
+//     }
+//     {
+//          console.log('intenta de nuevo ')
+
+//     }
+// }
+
+let estudiantes = [
+
     {
-         console.log('intenta de nuevo ')
+        nombres: 'shakira',
+        nota: [ 4, 5]
 
+    },
+
+    {
+        nombres: 'batman',
+        nota: [ 3, 4]
+
+        
+    },
+
+    {
+        nombres: 'goku',
+        nota: [ 2, 5]
+
+        
+    },
+
+    {
+        nombres: 'shakira',
+        nota: [ 1, 3]
+
+        
     }
+
+]
+
+for (let i = 0; i < estudiantes.length; i++) {
+
+    let comparacion = estudiantes[i].notas + estudiantes[i].notas / 2
+    
+    if(estudiantes[i].nota >= comparacion ){
+
+        console.log(  estudiantes[i].nombres + '  ' + estudiantes[i].nota + '  ' + `estudiante paso  `)
+    }else{
+        console.log(  estudiantes[i].nombres + '   ' + estudiantes[i].nota  + '  ' + `estudiante no paso  `)
+    }
+
 }
