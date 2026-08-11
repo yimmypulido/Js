@@ -49,3 +49,19 @@
 // }
 //     console.log('este es el numero mayor ' + numeroMayor)
 
+let productos = [
+{ nombre: "pantalla", precio: 500000 },
+{ nombre: "grafica", precio: 12000 },
+{ nombre: "memoriaRam", precio: 50000 }
+];
+let precioTotal = 0;
+
+
+for (let i = 0; i < productos.length; i++) {
+    
+    let precioTotal = productos[0].precio + productos[1].precio + productos[2].precio
+
+
+    console.log( 'el precio total de la compra es precioTotal ' + precioTotal)
+}
+
