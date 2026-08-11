@@ -1,16 +1,16 @@
 // ejercicio n°1 
 
 
-// let colores = [ 'blanco', 'negro', 'gris', 'azul', 'dorado']
+let colores = [  'blanco', 'negro', 'gris', 'azul', 'dorado',]
 
-// for (let i = 0; i <= colores.length ; i++) {
+for (let i = 0; i <= colores.length ; i++) {
 
-    
-// console.log( colores[i] )
-// }
+    console.log( colores[colores.length - 1] )
 
-//  console.log (  ' primer color' +  colores[0])
+}
 
+ console.log (  ' primer color ' +  colores[0])
+ 
 
 //ejercicio n°2
 
@@ -98,24 +98,67 @@
 //         console.log( 'estos son los estudiantes aprobados ' + aprobado)
 //     }
 
+// ejercicio n°7
+
 // }
 
-const ejercicios = [
-{ nombre: "Sentadilla", peso: 80 },
-{ nombre: "Press banca", peso: 60 },
-{ nombre: "Peso muerto", peso: 120 },
-{ nombre: "Dominadas lastradas", peso: 25 }
-];
-let maximoPeso = 0;
-let ejercicioMasPesado = "";
+// const ejercicios = [
+// { nombre: "Sentadilla", peso: 80 },
+// { nombre: "Press banca", peso: 60 },
+// { nombre: "Peso muerto", peso: 120 },
+// { nombre: "Dominadas lastradas", peso: 25 }
+// ];
+// let maximoPeso = 0;
+// let ejercicioMasPesado = "";
 
-for (let i = 0; i < ejercicios.length; i++) {
+// for (let i = 0; i < ejercicios.length; i++) {
 
-    if(ejercicios[i].peso > maximoPeso ){
+//     if(ejercicios[i].peso > maximoPeso ){
 
-        maximoPeso = ejercicios[i].peso
-        ejercicioMasPesado = ejercicios[i].nombre
+//         maximoPeso = ejercicios[i].peso
+//         ejercicioMasPesado = ejercicios[i].nombre
         
-    }
+//     }
     
-}console.log( ' este es el peso mas alto ' + maximoPeso + ' y el nombre del ejercicio es ' + ejercicioMasPesado)
+// }console.log( ' este es el peso mas alto ' + maximoPeso + ' y el nombre del ejercicio es ' + ejercicioMasPesado)
+
+
+// ejercicio n°8
+
+
+//     const boxeadores = [
+// { nombre: "Floyd Mayweather", victorias: 50, derrotas: 0, kos: 27 },
+// { nombre: "Mike Tyson", victorias: 50, derrotas: 6, kos: 44 },
+// { nombre: "Muhammad Ali", victorias: 56, derrotas: 5, kos: 37 },
+// { nombre: "Gennadiy Golovkin", victorias: 42, derrotas: 2, kos: 37 }
+// ];
+
+// let victo = 0;
+// let KOs = 0;
+ 
+// console.log( "estadistica de boxeadores")
+
+// for (let i = 0; i < boxeadores.length; i++) {
+
+//     let peleasTotales = boxeadores[i].victorias + boxeadores[i].derrotas;
+//     let victorias = boxeadores[i].victorias / peleasTotales * 100;
+//     let ko =  boxeadores[i].kos / peleasTotales * 100;
+
+//     if( boxeadores[i].victorias  > victo && boxeadores[i].kos > KOs ){
+
+//         let victo = boxeadores[i].victorias + boxeadores[i].nombre
+//         let KOs = boxeadores[i].kos
+
+//         console.log(victo)
+//         console.log(KOs)
+
+        
+//     }
+
+   
+//     console.log (  boxeadores[i].nombre + '\n' + 'peleas: '  + peleasTotales )
+//     console.log( '% de victorias ' + victorias.toFixed(1))
+//     console.log( '% de Ko ' + ko.toFixed(1))
+
+// }
+ 
