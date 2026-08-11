@@ -49,19 +49,73 @@
 // }
 //     console.log('este es el numero mayor ' + numeroMayor)
 
-let productos = [
-{ nombre: "pantalla", precio: 500000 },
-{ nombre: "grafica", precio: 12000 },
-{ nombre: "memoriaRam", precio: 50000 }
-];
-let precioTotal = 0;
+//ejercicio n°5
+
+// let productos = [
+// { nombre: "pantalla", precio: 500000 },
+// { nombre: "grafica", precio: 12000 },
+// { nombre: "memoriaRam", precio: 50000 }
+// ];
+// let precioTotal = 0;
 
 
-for (let i = 0; i < productos.length; i++) {
+// for (let i = 0; i < productos.length; i++) {
     
-    let precioTotal = productos[0].precio + productos[1].precio + productos[2].precio
+//     let precioTotal = productos[0].precio + productos[1].precio + productos[2].precio
 
 
-    console.log( 'el precio total de la compra es precioTotal ' + precioTotal)
-}
+//     console.log( 'el precio total de la compra es precioTotal ' + precioTotal)
+// }
 
+
+// ejercicio n°6 
+
+// const estudiantes =[
+// {
+//     nombre: 'Ana', 
+//     nota: 4.5
+// },
+// {
+//     nombre: 'Laura',
+//     nota: 3.5
+// }, 
+// {
+//     nombre: 'carlos',
+//     nota:  1.5
+// },
+// {
+//     nombre: 'pedro',
+//     nota: 2.9,
+// }
+// ]
+
+// for (let i = 0; i < estudiantes.length; i++) {
+
+//     if (estudiantes[i].nota >= 3){
+
+//          let aprobado = estudiantes[i].nombre
+
+//         console.log( 'estos son los estudiantes aprobados ' + aprobado)
+//     }
+
+// }
+
+const ejercicios = [
+{ nombre: "Sentadilla", peso: 80 },
+{ nombre: "Press banca", peso: 60 },
+{ nombre: "Peso muerto", peso: 120 },
+{ nombre: "Dominadas lastradas", peso: 25 }
+];
+let maximoPeso = 0;
+let ejercicioMasPesado = "";
+
+for (let i = 0; i < ejercicios.length; i++) {
+
+    if(ejercicios[i].peso > maximoPeso ){
+
+        maximoPeso = ejercicios[i].peso
+        ejercicioMasPesado = ejercicios[i].nombre
+        
+    }
+    
+}console.log( ' este es el peso mas alto ' + maximoPeso + ' y el nombre del ejercicio es ' + ejercicioMasPesado)
