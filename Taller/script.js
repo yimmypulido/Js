@@ -26,10 +26,26 @@
 // ejercicio n°3
 
 
-for (let i = 1; i <= 20 ; i++) {
+// for (let i = 1; i <= 20 ; i++) {
     
- if ( i % 2 === 0){
+//  if ( i % 2 === 0){
 
-    console.log(i)
- }
-}
+//     console.log(i)
+//  }
+// }
+
+// ejercicio n°4
+
+// let numeros = [ 0, 45, 59, 55555, 66, 99,1000,];
+// let numeroMayor = 0;
+
+// for (let i = 0; i < numeros.length; i++) {
+ 
+// if( numeros[i] > numeroMayor ){
+
+//     numeroMayor = numeros[i];
+
+// }
+// }
+//     console.log('este es el numero mayor ' + numeroMayor)
+
