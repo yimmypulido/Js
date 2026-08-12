@@ -12,14 +12,13 @@
 
 //ejercicio n°2
 
-// const numeros = [ 96, 45, 59, 5, 66, 99]
+const numeros = [ 96, 45, 59, 5, 66, 99]
 
 
-// for (let i = 0; i <= numeros.length; i++) {
+for (let i = 0; i <= numeros.length; i++) {
      
-//     console.log( `el array tiene este numero de elementos ` + numeros.length)
     
-// }
+} console.log( `el array tiene este numero de elementos ` + numeros.length)
 
 // ejercicio n°3
 
@@ -124,47 +123,47 @@
 // ejercicio n°8
 
 
-const boxeadores = [
-    { nombre: "Floyd Mayweather", victorias: 50, derrotas: 0, kos: 27 },
-    { nombre: "Mike Tyson", victorias: 50, derrotas: 6, kos: 44 },
-    { nombre: "Muhammad Ali", victorias: 56, derrotas: 5, kos: 37 },
-    { nombre: "Gennadiy Golovkin", victorias: 42, derrotas: 2, kos: 37 }
-];
+// const boxeadores = [
+//     { nombre: "Floyd Mayweather", victorias: 50, derrotas: 0, kos: 27 },
+//     { nombre: "Mike Tyson", victorias: 50, derrotas: 6, kos: 44 },
+//     { nombre: "Muhammad Ali", victorias: 56, derrotas: 5, kos: 37 },
+//     { nombre: "Gennadiy Golovkin", victorias: 42, derrotas: 2, kos: 37 }
+// ];
 
-let victo = 0;
-let KOs = 0;
+// let victo = 0;
+// let KOs = 0;
  
-    console.log( "estadistica de boxeadores")
+//     console.log( "estadistica de boxeadores")
 
-for (let i = 0; i < boxeadores.length; i++) {
+// for (let i = 0; i < boxeadores.length; i++) {
 
-    let peleasTotales = boxeadores[i].victorias + boxeadores[i].derrotas;
-    let victorias = boxeadores[i].victorias / peleasTotales * 100;
-    let ko =  boxeadores[i].kos / peleasTotales * 100;
-    console.log (  boxeadores[i].nombre + '\n' + 'peleas: '  + peleasTotales )
-    console.log( '% de victorias ' + victorias.toFixed(1) + '%')
-    console.log( '% de Ko ' + ko.toFixed(1) + '%')
+//     let peleasTotales = boxeadores[i].victorias + boxeadores[i].derrotas;
+//     let victorias = boxeadores[i].victorias / peleasTotales * 100;
+//     let ko =  boxeadores[i].kos / peleasTotales * 100;
+//     console.log (  boxeadores[i].nombre + '\n' + 'peleas: '  + peleasTotales )
+//     console.log( '% de victorias ' + victorias.toFixed(1) + '%')
+//     console.log( '% de Ko ' + ko.toFixed(1) + '%')
 
-}
-
-
-console.log(' === resumen ===')
-
-let nombre = '';
-
-for (let i = 0; i < boxeadores.length; i++) {
+// }
 
 
-if( boxeadores[i].victorias > victo ){
+// console.log(' === resumen ===')
 
-        victo = boxeadores[i].victorias
+// let nombre = '';
+
+// for (let i = 0; i < boxeadores.length; i++) {
+
+
+// if( boxeadores[i].victorias > victo ){
+
+//         victo = boxeadores[i].victorias
         
-        nombre = boxeadores[i].nombre
+//         nombre = boxeadores[i].nombre
 
-    }else if( boxeadores[i].kos > KOs ){
+//     }else if( boxeadores[i].kos > KOs ){
 
-        KOs = boxeadores[i].kos
-         console.log(  'peleador con mas Ko: ' + boxeadores[i].nombre + ' '+ KOs)
+//         KOs = boxeadores[i].kos
+//          console.log(  'peleador con mas Ko: ' + boxeadores[i].nombre + ' '+ KOs)
 
-    }
-}  console.log( 'peleador con mas victorias: ' + nombre + ' ' + victo +' victorias')
+//     }
+// }  console.log( 'peleador con mas victorias: ' + nombre + ' ' + victo +' victorias')
