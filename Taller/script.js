@@ -41,21 +41,25 @@
 
 //ejercicio n°5
 
-// let productos = [
-// { nombre: "pantalla", precio: 500000 },
-// { nombre: "grafica", precio: 12000 },
-// { nombre: "memoriaRam", precio: 50000 }
-// ];
-// let precioTotal = 0;
+let productos = [
+{ nombre: "pantalla", precio: 15 },
+{ nombre: "grafica", precio: 15 },
+{ nombre: "memoriaRam", precio: 20},
+];
 
 
-// for (let i = 0; i < productos.length; i++) {
+let precioTotal = 0;
+
+
+      for (let i = 0; i < productos.length; i++) {
+
+    precioTotal = precioTotal + productos[i].precio;
+
+}
+     console.log( 'el precio total de la compra es precioTotal ' + precioTotal)
     
-//     let precioTotal = productos[0].precio + productos[1].precio + productos[2].precio
 
 
-//     console.log( 'el precio total de la compra es precioTotal ' + precioTotal)
-// }
 
 
 // ejercicio n°6 
@@ -75,7 +79,12 @@
 // },
 // {
 //     nombre: 'pedro',
-//     nota: 2.9,
+//     nota: 2.9
+// },
+// {
+//     nombre: 'daniela',
+//     nota: 5,
+    
 // }
 // ]
 
@@ -85,12 +94,14 @@
 
 //          let aprobado = estudiantes[i].nombre
 
-//         console.log( 'estos son los estudiantes aprobados ' + aprobado)
+//         console.log( 'estos son los estudiantes aprobados ' + aprobado + ' y la nota con que pasaron es:  ' + estudiantes[i].nota)
 //     }
+
+// }
+
 
 // ejercicio n°7
 
-// }
 
 // const ejercicios = [
 // { nombre: "Sentadilla", peso: 80 },
