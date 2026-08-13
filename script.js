@@ -339,46 +339,164 @@
 //     }
 // }
 
-let estudiantes = [
+// let estudiantes = [
+
+//     {
+//         nombres: 'shakira',
+//         nota: [ 4, 5]
+
+//     },
+
+//     {
+//         nombres: 'batman',
+//         nota: [ 3, 4]
+
+        
+//     },
+
+//     {
+//         nombres: 'goku',
+//         nota: [ 2, 5]
+
+        
+//     },
+
+//     {
+//         nombres: 'shakira',
+//         nota: [ 1, 3]
+
+        
+//     }
+
+// ]
+
+// for (let i = 0; i < estudiantes.length; i++) {
+
+//     let comparacion = estudiantes[i].nota[0] + estudiantes[i].nota[1] / 2
+    
+//     if( comparacion >= 4 ){
+    
+//         console.log(  estudiantes[i].nombres + ' tu promedio es ' + comparacion + '  ' + `estudiante paso  `)
+//     }else{
+//         console.log(  estudiantes[i].nombres + '  tu promedio es  ' + comparacion + '  ' + `estudiante no paso  `)
+//     }
+
+// }
+
+
+// const estudiantes = [
+
+//     {
+//         nombre: 'shakira',
+//         notas: [3,4,5],
+//         aprobado: false
+//     },
+
+//     {
+//         nombre: 'eminem',
+//         notas: [1,5,1],
+//         aprobado: false
+//     },
+
+//     {
+//         nombre: 'goku',
+//         notas: [4,4,2],
+//         aprobado: false
+//     },
+
+//     {
+//         nombre: 'luis',
+//         notas: [4,4,1],
+//         aprobado: false
+//     },
+
+//     {
+//         nombre: 'Laura',
+//         notas: [5,2,5],
+//         aprobado: false
+//     },
+
+// ]
+
+// for (let i = 0; i < estudiantes.length; i++) {
+    
+//     console.log(estudiantes[i].nombre)
+    
+// };
+
+
+// para ahorrar la suma de valores en un array 
+
+// se puede hacer de la siguiente manera 
+//  variable += array[i];
+
+
+const productos = [
 
     {
-        nombres: 'shakira',
-        nota: [ 4, 5]
+        nombre: 'tv',
+        marca: 'samsung',
+        precio: 2000,
+        stock: 4,
+        modelo: 2009
 
     },
 
     {
-        nombres: 'batman',
-        nota: [ 3, 4]
+        nombre: 'celular',
+        marca: 'redmi note',
+        precio: 1000,
+        stock: 10,
+        modelo: 2024
 
-        
     },
 
     {
-        nombres: 'goku',
-        nota: [ 2, 5]
+        nombre: 'audifonos',
+        marca: 'redmi',
+        precio: 3000,
+        stock: 25,
+        modelo: 2023
 
-        
     },
 
     {
-        nombres: 'shakira',
-        nota: [ 1, 3]
+        nombre: 'portatil',
+        marca: 'acer',
+        precio: 4000,
+        stock: 30,
+        modelo: 2022
 
-        
-    }
+    },
+
+    {
+        nombre: 'pc',
+        marca: 'asus',
+        precio: 5000,
+        stock: 5,
+        modelo: 2025
+
+    },
+
+    {
+        nombre: 'baffles',
+        marca: 'bora',
+        precio: 1500,
+        stock:  21,
+        modelo: 2022
+
+    },
 
 ]
 
-for (let i = 0; i < estudiantes.length; i++) {
+let inversionTotal = 0;
 
-    let comparacion = estudiantes[i].nota[0] + estudiantes[i].nota[1] / 2
+for (let i = 0; i < productos.length; i++) {
     
-    if( comparacion >= 4 ){
-    
-        console.log(  estudiantes[i].nombres + ' tu promedio es ' + comparacion + '  ' + `estudiante paso  `)
-    }else{
-        console.log(  estudiantes[i].nombres + '  tu promedio es  ' + comparacion + '  ' + `estudiante no paso  `)
-    }
+   inversion = productos[i].precio + productos[i].stock
 
+   inversionTotal = inversionTotal + inversion
+    
 }
+
+console.log( 'su inversion total en todos los productos fue de ' + inversionTotal)

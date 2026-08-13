@@ -41,22 +41,22 @@
 
 //ejercicio n°5
 
-let productos = [
-{ nombre: "pantalla", precio: 15 },
-{ nombre: "grafica", precio: 15 },
-{ nombre: "memoriaRam", precio: 20},
-];
+// let productos = [
+// { nombre: "pantalla", precio: 15 },
+// { nombre: "grafica", precio: 15 },
+// { nombre: "memoriaRam", precio: 20},
+// ];
 
 
-let precioTotal = 0;
+// let precioTotal = 0;
 
 
-      for (let i = 0; i < productos.length; i++) {
+//       for (let i = 0; i < productos.length; i++) {
 
-    precioTotal = precioTotal + productos[i].precio;
+//     precioTotal = precioTotal + productos[i].precio;
 
-}
-     console.log( 'el precio total de la compra es precioTotal ' + precioTotal)
+// }
+//      console.log( 'el precio total de la compra es precioTotal ' + precioTotal)
     
 
 
