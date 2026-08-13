@@ -431,92 +431,127 @@
 //  variable += array[i];
 
 
-const productos = [
+// const productos = [
 
-    {
-        nombre: 'tv',
-        marca: 'samsung',
-        precio: 1000000,
-        stock: 1,
-        modelo: 2009
+//     {
+//         nombre: 'tv',
+//         marca: 'samsung',
+//         precio: 1000000,
+//         stock: 1,
+//         modelo: 2009
 
-    },
+//     },
 
-    {
-        nombre: 'celular',
-        marca: 'redmi note',
-        precio: 100000,
-        stock: 1,
-        modelo: 2024
+//     {
+//         nombre: 'celular',
+//         marca: 'redmi note',
+//         precio: 100000,
+//         stock: 1,
+//         modelo: 2024
 
-    },
+//     },
 
-    {
-        nombre: 'audifonos',
-        marca: 'redmi',
-        precio: 100000,
-        stock: 1,
-        modelo: 2023
+//     {
+//         nombre: 'audifonos',
+//         marca: 'redmi',
+//         precio: 100000,
+//         stock: 1,
+//         modelo: 2023
 
-    },
+//     },
 
-    {
-        nombre: 'portatil',
-        marca: 'acer',
-        precio: 1000,
-        stock: 1,
-        modelo: 2022
+//     {
+//         nombre: 'portatil',
+//         marca: 'acer',
+//         precio: 1000,
+//         stock: 1,
+//         modelo: 2022
 
-    },
+//     },
 
-    {
-        nombre: 'pc',
-        marca: 'asus',
-        precio: 100,
-        stock: 1,
-        modelo: 2025
+//     {
+//         nombre: 'pc',
+//         marca: 'asus',
+//         precio: 100,
+//         stock: 1,
+//         modelo: 2025
 
-    },
+//     },
 
-    {
-        nombre: 'baffles',
-        marca: 'bora',
-        precio: 10,
-        stock:  1,
-        modelo: 2022
+//     {
+//         nombre: 'baffles',
+//         marca: 'bora',
+//         precio: 10,
+//         stock:  1,
+//         modelo: 2022
 
-    },
+//     },
 
-]
+// ]
 
-let inversionTotal = 0;
-let productoMasCaro = '';
-let productoMasEconomico = '';
-let productoMasInvertido = '';
+// let inversionTotal = 0;
+// let productoMasCaro = '';
+// let productoMasEconomico = '';
+// let productoMasInvertido = '';
 
-for (let i = 0; i < productos.length; i++) {
+// for (let i = 0; i < productos.length; i++) {
     
     
-   inversion = productos[i].precio * productos[i].stock
-   inversionTotal = inversionTotal + inversion
+//    inversion = productos[i].precio * productos[i].stock
+//    inversionTotal = inversionTotal + inversion
 
-    let caro = productos[i].precio >= productoMasCaro
+//     let caro = productos[i].precio >= productoMasCaro
 
-        productoMasCaro = productos[i].precio
-        console.log ('el producto mas caro es ' + productos[i].nombre + ' con un valor de ' + productoMasCaro  )
+//         productoMasCaro = productos[i].precio
+//         console.log ('el producto mas caro es ' + productos[i].nombre + ' con un valor de ' + productoMasCaro  )
 
-     let pro = productos[i].precio <= productoMasEconomico
+//      let pro = productos[i].precio <= productoMasEconomico
 
-        productoMasEconomico = productos[i].precio
+//         productoMasEconomico = productos[i].precio
 
-        console.log ('el producto mas economico es' + productos[i].nombre + 'con un valor de ' + productoMasEconomico  )
+//         console.log ('el producto mas economico es' + productos[i].nombre + 'con un valor de ' + productoMasEconomico  )
 
 
    
     
 
+// }
+
+
+
+// console.log( 'su inversion total en todos los productos fue de ' + inversionTotal)
+
+// }
+
+
+
+let operacion = prompt('ingrese la operacion que desea realizar ')
+
+let n1 = Number( prompt(' ingrese el primer digito'))
+let n2 = Number (prompt ('ingrese el segundo digito'))
+
+function  calculadora(a,b,operacion){
+
+    if( operacion === 'sumar' ){
+
+        console.log(n1+n2)
+
+    }else if (operacion === 'restar'){
+
+        console.log(n1-n2)
+
+    }else if (operacion === 'multiplicar'){
+
+        console.log(n1*n2)
+
+    }else if (operacion === 'dividir' ){
+
+        console-log(n1/n2)
+    }else(
+        console.log('escriba la operacion bien')
+    )
+
+
 }
 
-
-
-console.log( 'su inversion total en todos los productos fue de ' + inversionTotal)
+calculadora( n1,n2,operacion)
