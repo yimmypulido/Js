@@ -436,8 +436,8 @@ const productos = [
     {
         nombre: 'tv',
         marca: 'samsung',
-        precio: 2000,
-        stock: 4,
+        precio: 1000000,
+        stock: 1,
         modelo: 2009
 
     },
@@ -445,8 +445,8 @@ const productos = [
     {
         nombre: 'celular',
         marca: 'redmi note',
-        precio: 1000,
-        stock: 10,
+        precio: 100000,
+        stock: 1,
         modelo: 2024
 
     },
@@ -454,8 +454,8 @@ const productos = [
     {
         nombre: 'audifonos',
         marca: 'redmi',
-        precio: 3000,
-        stock: 25,
+        precio: 100000,
+        stock: 1,
         modelo: 2023
 
     },
@@ -463,8 +463,8 @@ const productos = [
     {
         nombre: 'portatil',
         marca: 'acer',
-        precio: 4000,
-        stock: 30,
+        precio: 1000,
+        stock: 1,
         modelo: 2022
 
     },
@@ -472,8 +472,8 @@ const productos = [
     {
         nombre: 'pc',
         marca: 'asus',
-        precio: 5000,
-        stock: 5,
+        precio: 100,
+        stock: 1,
         modelo: 2025
 
     },
@@ -481,8 +481,8 @@ const productos = [
     {
         nombre: 'baffles',
         marca: 'bora',
-        precio: 1500,
-        stock:  21,
+        precio: 10,
+        stock:  1,
         modelo: 2022
 
     },
@@ -490,13 +490,33 @@ const productos = [
 ]
 
 let inversionTotal = 0;
+let productoMasCaro = '';
+let productoMasEconomico = '';
+let productoMasInvertido = '';
 
 for (let i = 0; i < productos.length; i++) {
     
-   inversion = productos[i].precio + productos[i].stock
-
-   inversionTotal = inversionTotal + inversion
     
+   inversion = productos[i].precio * productos[i].stock
+   inversionTotal = inversionTotal + inversion
+
+    let caro = productos[i].precio >= productoMasCaro
+
+        productoMasCaro = productos[i].precio
+        console.log ('el producto mas caro es ' + productos[i].nombre + ' con un valor de ' + productoMasCaro  )
+
+     let pro = productos[i].precio <= productoMasEconomico
+
+        productoMasEconomico = productos[i].precio
+
+        console.log ('el producto mas economico es' + productos[i].nombre + 'con un valor de ' + productoMasEconomico  )
+
+
+   
+    
+
 }
+
+
 
 console.log( 'su inversion total en todos los productos fue de ' + inversionTotal)
