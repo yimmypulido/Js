@@ -21,7 +21,7 @@ let saldo = 500_000;
         if( cuanto <= 0  ){
         alert('ingresa un monto valido ')    
         }else if( cuanto <= saldo ){
-            saldo = saldo - cuanto
+            saldo = saldo - cuanto * 4 / 1000
             alert(`enviaste ${cuanto} a ${persona}`)
 
         }
@@ -38,11 +38,16 @@ let saldo = 500_000;
 
         if ( retiro <= saldo ){ 
 
-            saldo = saldo - retiro 
+            saldo = saldo - retiro * 4 / 1000
 
             alert( `su retiro es de: ${retiro}`)
 
-        }else{
+
+        }else if(saldo === retiro)[
+
+            alert('no puede retirar por el 4 x 1000 ')
+        ]
+        else{
 
             alert('saldo insuficiente')
 
