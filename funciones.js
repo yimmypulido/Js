@@ -36,17 +36,22 @@ let saldo = 500_000;
 
         let retiro = Number(prompt('cuanto desea retirar'))
 
-        if ( retiro <= saldo ){ 
+        let impuesto = retiro *4/1000
+        let saldoRetirable = saldo - impuesto
 
-            saldo = saldo - retiro * 4 / 1000
+        if ( saldoRetirable <= saldo ){ 
+
+            saldo = saldo - retiro 
 
             alert( `su retiro es de: ${retiro}`)
 
 
-        }else if(saldo === retiro)[
+        }else if(retiro > 0){
+
+            saldo = saldo - retiro - impuesto
 
             alert('no puede retirar por el 4 x 1000 ')
-        ]
+        }
         else{
 
             alert('saldo insuficiente')
@@ -63,4 +68,11 @@ let saldo = 500_000;
         saldo = deposito + saldo 
 
         alert(`depositaste ${deposito} y tu saldo actual es ${saldo}`)
+    }
+
+
+    export function verDepositos (){
+
+
+
     }
