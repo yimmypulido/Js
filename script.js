@@ -525,33 +525,212 @@
 
 
 
-let operacion = prompt('ingrese la operacion que desea realizar ')
+// let operacion = prompt('ingrese la operacion que desea realizar ')
 
-let n1 = Number( prompt(' ingrese el primer digito'))
-let n2 = Number (prompt ('ingrese el segundo digito'))
+// let n1 = Number( prompt(' ingrese el primer digito'))
+// let n2 = Number (prompt ('ingrese el segundo digito'))
 
-function  calculadora(a,b,operacion){
+// function  calculadora(a,b,operacion){
 
-    if( operacion === 'sumar' ){
+//     if( operacion === 'sumar' ){
 
-        console.log(n1+n2)
+//         console.log(n1+n2)
 
-    }else if (operacion === 'restar'){
+//     }else if (operacion === 'restar'){
 
-        console.log(n1-n2)
+//         console.log(n1-n2)
 
-    }else if (operacion === 'multiplicar'){
+//     }else if (operacion === 'multiplicar'){
 
-        console.log(n1*n2)
+//         console.log(n1*n2)
 
-    }else if (operacion === 'dividir' ){
+//     }else if (operacion === 'dividir' ){
 
-        console-log(n1/n2)
-    }else(
-        console.log('escriba la operacion bien')
-    )
+//         console-log(n1/n2)
+//     }else(
+//         console.log('escriba la operacion bien')
+//     )
 
 
-}
+// }
 
-calculadora( n1,n2,operacion)
+// calculadora( n1,n2,operacion)
+
+
+// fibonnaci
+
+// let number = Number(prompt( 'ingrese hasta donde quiere el fibonacci'))
+
+// let suma =[ 0,1,1,2,3,5,8,13,21,34,55]
+
+// for (let i = 0; i < suma.length; i++) {
+    
+//     let fibonacci = suma[i] + suma[i]
+
+//    if(number <= 10){
+
+//     console.log (suma.length)
+//    }
+
+//     console.log( )
+
+       
+// }
+
+
+// let pregunta = prompt('escriba la palabra para saber si es palindromo o no')
+
+// const palindromo = pregunta.split('')
+
+// let reve = palindromo.reverse('')
+
+// let origi = p = 
+
+
+
+// if ( palindromo === reve ){
+
+//      palindromo.join('')
+
+//     console.log( 'su palabra es palindromo')
+
+// }else{
+
+//     console.log( ' su palbra no es palindroma ')
+// }
+
+// let nombre = 'mario';
+// let edad = 49;
+
+// if(edad >= 18 ){
+
+//     console.log (`${nombre} es mayor de edad`)
+
+// }else{
+
+//     console.log (`${nombre} es mayor de edad`)
+
+// }
+
+// function validarEdad(nombre, edad){
+
+//     if( edad >= 18 ){
+
+//     console.log (`${nombre} es mayor de edad`)
+
+// }else{
+
+//     console.log (`${nombre} es mayor de edad`)
+
+// }
+// }
+
+// const saludar2 = ()=>{    
+
+//     // funcion flecha
+
+// }
+let saldo = 500_000;
+let option ;
+
+    do {
+
+    option = Number(prompt( `
+    
+    Bienvenido A Su Cuenta
+
+    Selecciona Una Opcion:
+    1) Ver Saldo 
+    2) Trasferir
+    3) Retirar
+    4) Depositar
+    5) Salir
+    
+    `));
+
+    if( option == 1){
+
+        consultarSaldo()
+
+    } else if( option == 2 ){
+
+     
+        transferir();
+
+    }else if( option == 3 ){
+        
+        retirar()
+
+    }else if( option == 4 ){
+        
+        Depositar()
+
+    }else if( option == 5 ){
+        alert('cerrando sesion')
+
+    }else{
+
+        alert('escriba bien')
+    }
+
+
+
+    } while (option != 5);
+
+
+    // funciones: 
+
+
+    function consultarSaldo(){
+
+        alert( ` Tu saldo es: ${saldo}` )
+
+    };
+
+    function transferir(){
+
+        let persona = prompt('A Quien Le Quiere Transferir');
+        let cuanto = Number(prompt('cuanto va a transferir'));
+
+
+        if( cuanto <= 0  ){
+        alert('ingresa un monto valido ')    
+        }else if( cuanto <= saldo ){
+            saldo = saldo - cuanto
+            alert(`enviaste ${cuanto} a ${persona}`)
+
+        }
+        
+        else{
+            alert('fondos insuficientes')
+        }
+
+    }
+
+    function retirar() {
+
+        let retiro = Number(prompt('cuanto desea retirar'))
+
+        if ( retiro <= saldo ){ 
+
+            saldo = saldo - retiro 
+
+            alert( `su retiro es de: ${retiro}`)
+
+        }else{
+
+            alert('saldo insuficiente')
+
+        }
+        
+    }
+
+
+    function Depositar () {
+
+        let deposito = Number(prompt('cuanto va a depositar'))
+        
+        saldo = deposito + saldo 
+
+        alert(`depositaste ${deposito} y tu saldo actual es ${saldo}`)
+    }
