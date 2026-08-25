@@ -630,8 +630,15 @@
 //     // funcion flecha
 
 // }
-let saldo = 500_000;
-let option ;
+
+
+
+import { consultarSaldo } from "./funciones.js";
+import { transferir  } from "./funciones.js";
+import { retirar } from "./funciones.js";
+import { Depositar } from "./funciones.js";
+
+    let option ;
 
     do {
 
@@ -678,59 +685,3 @@ let option ;
     } while (option != 5);
 
 
-    // funciones: 
-
-
-    function consultarSaldo(){
-
-        alert( ` Tu saldo es: ${saldo}` )
-
-    };
-
-    function transferir(){
-
-        let persona = prompt('A Quien Le Quiere Transferir');
-        let cuanto = Number(prompt('cuanto va a transferir'));
-
-
-        if( cuanto <= 0  ){
-        alert('ingresa un monto valido ')    
-        }else if( cuanto <= saldo ){
-            saldo = saldo - cuanto
-            alert(`enviaste ${cuanto} a ${persona}`)
-
-        }
-        
-        else{
-            alert('fondos insuficientes')
-        }
-
-    }
-
-    function retirar() {
-
-        let retiro = Number(prompt('cuanto desea retirar'))
-
-        if ( retiro <= saldo ){ 
-
-            saldo = saldo - retiro 
-
-            alert( `su retiro es de: ${retiro}`)
-
-        }else{
-
-            alert('saldo insuficiente')
-
-        }
-        
-    }
-
-
-    function Depositar () {
-
-        let deposito = Number(prompt('cuanto va a depositar'))
-        
-        saldo = deposito + saldo 
-
-        alert(`depositaste ${deposito} y tu saldo actual es ${saldo}`)
-    }
